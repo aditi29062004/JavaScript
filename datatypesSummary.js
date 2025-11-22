@@ -1,5 +1,5 @@
 /*
-1) Primitive Datatypes
+1) Primitive Datatypes---Stack Store
        Number => number
        String  => string
        Boolean  => boolean
@@ -8,7 +8,7 @@
        Symbol  =>  symbol
        BigInt  =>  bigint
 
-2) Non-primitive Datatypes(Reference Types)
+2) Non-primitive Datatypes(Reference Types)----Heap Store
        Arrays  =>  object
        Object  =>  object
        Function  =>  function   
@@ -35,3 +35,10 @@ let print=function(){
     console.log("hello world")
 }
 console.log(typeof print)
+
+//copy isn't formed
+let secondobj=myobj
+secondobj.age=21
+
+console.log(secondobj.age)
+console.log(myobj.age)
